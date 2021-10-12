@@ -170,8 +170,8 @@ private:
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(640, 480), "Game of life");
-	Grid grid(window.getSize(), 16.f, 1.f);
+	sf::RenderWindow window(sf::VideoMode(1280, 720), "Game of life");
+	Grid grid(window.getSize(), 4.f, 1.f);
 
 	while (window.isOpen())
 	{
