@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 
 # Set project name and version
-set(PROJECT_NAME ProjektPO)
+set(PROJECT_NAME ProjektOK)
 project(${PROJECT_NAME})
 
 # Set C++ standard
@@ -35,6 +35,7 @@ add_executable(${PROJECT_NAME}
   src/gameRuleGameOfLifeClosedInTorus.cpp
   src/gameRuleGameOfLifeDefault.cpp
   src/gameRuleRule30.cpp
+  src/Grid.cpp
 )
 
 # Set include directory search paths
