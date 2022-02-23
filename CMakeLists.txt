@@ -30,12 +30,19 @@ find_package(SFML 2.5 COMPONENTS system window graphics REQUIRED)
 
 # Compile executable
 add_executable(${PROJECT_NAME}
-  src/main.cpp
-  src/gameRuleElementaryCA.cpp
-  src/gameRuleGameOfLifeClosedInTorus.cpp
-  src/gameRuleGameOfLifeDefault.cpp
-  src/gameRuleRule30.cpp
+  src/ContinuousGrid2D.cpp
   src/Grid.cpp
+  src/Grid1D.cpp
+  src/Grid2D.cpp
+  src/main.cpp
+  src/rulesetElementaryCA.cpp
+  src/rulesetElementaryLoopedCA.cpp
+  src/rulesetForest.cpp
+  src/rulesetGameOfLifeClosedInTorus.cpp
+  src/rulesetGameOfLifeDefault.cpp
+  src/rulesetTheExpansion.cpp
+  src/rulesetTheExpansionVonNeumann.cpp
+  src/Utility.cpp
 )
 
 # Set include directory search paths
