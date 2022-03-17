@@ -19,7 +19,7 @@ int main()
 
 	Grid1D elementaryCA(window.getSize(), 2.f);
 	elementaryCA.setConditionFunction(&rulesetElementaryCA);
-	elementaryCA.setRule(110);
+	elementaryCA.setRule(18);
 
 	Grid1D elementaryLoopedCA(window.getSize(), 2.f);
 	elementaryLoopedCA.setConditionFunction(&rulesetElementaryLoopedCA);
@@ -41,7 +41,7 @@ int main()
 	theExpansionVonNeumann.setColorFunction(&colorTheExpansionVonNeumann);
 	theExpansionVonNeumann.setMaxValue(255);
 
-	ContinuousGrid2D forest(window.getSize(), 1.f, sf::Color(10, 69, 5, 255));
+	ContinuousGrid2D forest(window.getSize(), 1.f);
 	forest.setConditionFunction(&rulesetForest);
 	forest.setColorFunction(&colorForest);
 	forest.setMaxValue(15);
